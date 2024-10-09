@@ -1,0 +1,58 @@
+.auth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&__title {
+		margin: 2rem;
+		font-size: 3rem;
+	}
+
+	&__form {
+		display: flex;
+		width: 500px;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	&__input {
+		font-family: 'Rubik', sans-serif;
+		padding: 0.5rem;
+		outline: none;
+		border: 1px solid #03a99b;
+		border-radius: 4px;
+		font-size: 1.2rem;
+	}
+
+	&__button {
+		font-family: 'Rubik', sans-serif;
+		cursor: pointer;
+		padding: 0.5rem;
+		border: 1px solid #03a99b;
+		border-radius: 4px;
+		font-size: 1.2rem;
+		background-color: #03a99b;
+		color: #fff;
+
+		&:hover {
+			transition: all 0.2s ease-out;
+			background-color: #fff;
+			color: #03a99b;
+		}
+
+		&_disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
+
+			&:hover {
+				background-color: #03a99b;
+				color: #fff;
+			}
+		}
+	}
+
+	&__error {
+		color: tomato;
+	}
+}
