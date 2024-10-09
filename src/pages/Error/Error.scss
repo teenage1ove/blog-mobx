@@ -1,0 +1,28 @@
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 2rem;
+
+	&__title {
+		font-size: 3rem;
+		text-align: center;
+		color: tomato;
+	}
+
+	&__text {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #000;
+		padding: 1rem 2rem;
+		background-color: #000;
+		color: #fff;
+		border-radius: 12px;
+	}
+}
